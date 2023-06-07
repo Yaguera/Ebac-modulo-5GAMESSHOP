@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 16px 0;
+    background-color: #182c61;
+    color: #ecf0f1;
+    
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header h1 {
+    font-family: 'Bungee',cursive;
+}
+
+header nav li {
+    font-family: 'Bungee',cursive;
+    flex-direction: row;
+    padding: 20px;
+    list-style: none;
+    font-size: 20px;
+}
+
+header nav li a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
