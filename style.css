@@ -1,43 +1,165 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+header,
+section h2,
+section h3,
+form button {
+    font-family: 'Bungee', cursive;
+    font-weight: normal;
+}
+
+body,
+input,
+textarea {
+    font-family: 'Roboto', sans-serif;
+}
+
 header {
     padding: 16px 0;
     background-color: #182c61;
     color: #ecf0f1;
-    
+
 }
 
-header .container {
+
+header .container,
+section .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1280px;
+    max-width: 1366px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 30px;
 }
 
 header nav ul {
     display: flex;
 }
 
-header h1 {
-    font-family: 'Bungee',cursive;
+header h1,
+section h2 {
+    font-weight: normal;
 }
 
 header nav li {
-    font-family: 'Bungee',cursive;
     flex-direction: row;
-    padding: 20px;
+    padding: 10px;
     list-style: none;
-    font-size: 20px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+header nav li:hover {
+    transform: scale(1.1);
 }
 
 header nav li a {
     color: #ecf0f1;
     text-decoration: none;
+}
+
+
+section .container {
+    align-items: flex-start;
+}
+
+.brands-list img {
+    height: 24px;
+}
+
+.brands-list li {
+    display: inline;
+    text-decoration: none;
+    margin-right: 8px;
+}
+
+section {
+    padding: 24px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+    color: #182c61;
+}
+
+section p {
+    margin-bottom: 8px;
+    color: #182c61;
+    font-weight: 550;
+}
+
+section .store-front {
+    margin-right: 32px;
+}
+
+.social-links img {
+    height: 24px;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+    padding-right: 20px;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+#contact .container {
+    display: block;
+}
+
+.contact-methods {
+    display: flex;
+}
+
+.contact-methods div h3 {
+    color: #182c61;
+    margin-bottom: 16px;
+
+}
+
+section div {
+    justify-content: space-between;
+}
+
+form input,
+form textarea {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea {
+    height: 180px;
+    resize: none;
+}
+
+form button {
+    background-color: #182c61;
+    padding: 8px;
+    border: 0px;
+    color: #ecf0f1;
+    width: 320px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+form button:hover {
+    background-color: gray;
+}
+
+footer {
+    background-color: #182c61;
+    padding: 16px 30px;
+    color: #ecf0f1;
 }
