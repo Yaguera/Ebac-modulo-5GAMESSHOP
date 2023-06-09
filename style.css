@@ -28,8 +28,7 @@ header {
 }
 
 
-header .container,
-section .container {
+.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -155,11 +154,16 @@ form button {
 }
 
 form button:hover {
-    background-color: gray;
+    background-color: #314e9e;
 }
 
 footer {
     background-color: #182c61;
-    padding: 16px 30px;
+    padding: 16px 0;
     color: #ecf0f1;
+}
+
+input:focus,
+textarea:focus {
+    outline-color: #182c61;
 }
